@@ -2,6 +2,6 @@ name: Prices
 account: experimentalpriceindices
 server: shinyapps.io
 appId: 119534
-bundleId: 529280
+bundleId: 529285
 url: https://experimentalpriceindices.shinyapps.io/Prices/
-when: 1470908050.26212
+when: 1470908364.75078

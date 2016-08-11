@@ -26,7 +26,7 @@ shinyUI(
     # Give the page a title
     br(),
     titlePanel(
-      h1("Data visualisation of Experimental Prices indices", style = "color:darkblue; font-family: 'serif'; font-weight: bold; font-size: 32px;"),
+      h1("Data visualisation of Experimental Prices indices", style = "color:darkblue; font-family: 'serif'; font-weight: bold"),
       ),
     br(),
     br(),
