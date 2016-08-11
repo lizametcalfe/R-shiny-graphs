@@ -26,7 +26,7 @@ shinyUI(
     # Give the page a title
     br(),
     titlePanel(
-      h1("Data visualisation of Experimental Prices indices", style = "color:darkblue; font-family: 'serif'; font-weight: bold; font-size: 38px;"),
+      h1("Data visualisation of Experimental Prices indices", style = "color:darkblue; font-family: 'serif'; font-weight: bold; font-size: 32px;"),
       ),
     br(),
     br(),
@@ -46,17 +46,17 @@ shinyUI(
       
       
       # Create a spot for the barplot
-      mainPanel(
+          mainPanel(
+          tabsetPanel(type = "tabs", 
+          tabPanel("Food and non-alcoholic beverages", plotOutput("phonePlot")), 
+          tabPanel("Alcohol", plotOutput("alcplot")), 
           h1(""),
-          p("Experimental price indices based on web-scraped data from the Office for National Statistics. Ref: Office for National Statistics, 2016. Research indices using web scraped price data: May 2016 update. Downloaded from:"),
+          p("The experimental price indices used for these graphes were calculated as part of a pilot study conducted by the Office for National Statistics (ONS). The prices indices were calculated using data web scraped from three supermarkets. The details of the process, the calculation method, and the price indices can be found at: Office for National Statistics, 2016. Research indices using web scraped price data: May 2016 update. Downloaded from:"),
           a("https://www.ons.gov.uk/releases/researchindicesusingwebscrapedpricedatamay2016update."),
           br(),
           br(),
-          p("This information is licensed under the terms of the Open Government Licence [http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2]."),
-          br(),
-          tabsetPanel(type = "tabs", 
-          tabPanel("Food and non-alcoholic beverages", plotOutput("phonePlot")), 
-          tabPanel("Alcohol", plotOutput("alcplot")) 
+          p("This information is licensed under the terms of the Open Government Licence [http://www.nationalarchives.gov.uk/doc/open-government-licence/version/2].")
+
           )
       )
       
